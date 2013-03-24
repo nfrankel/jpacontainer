@@ -25,6 +25,9 @@ public class JpaScreen extends VerticalLayout {
 		table.setPageLength(4);
 
 		table.setVisibleColumns(new Object[] { "lastName", "firstName", "birthdate", "job.label" });
+		table.setColumnHeader("firstName", "Given name");
+		table.setColumnHeader("lastName", "Family name");
+		table.setColumnHeader("job.label", "Job");
 
 		addComponent(table);
 	}
